@@ -1,0 +1,17 @@
+# coding: UTF-8
+print "Hello World!"
+# print "comment out"
+
+print "こんにちは"
+
+a = [0, 1, 2, 3, 4]
+for i in a:
+    print i
+
+for i in ["Taro", 1985, 0.125, True]:
+    print i
+
+def func():
+    print "Hello!"
+
+func()
