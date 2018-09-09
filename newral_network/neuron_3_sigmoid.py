@@ -1,7 +1,7 @@
 # coding: UTF-8
 import math
 
-# シグモイド関数
+# シグモイド関数（入力の合計値を0~1に正規化する）
 def sigmoid(x):
     return 1.0/(1.0+math.exp(-x))
 

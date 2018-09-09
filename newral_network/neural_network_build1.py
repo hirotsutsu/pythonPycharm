@@ -24,9 +24,18 @@ class Neuron:
 
 # ニューラルネットワーク
 class NewralNetwork:
-    neuron = Neuron()
+    # 重み
+    # 順に，1つ目のニューロン，2つ目のニューロン，バイアス
+    w_im = [[0.5, 0.5], [-0.5, 0.3], [0.5, -0.5]]
+    w_mo = [-0.5, 0.5, 0.0]
 
-    weight = [-0.5, 0.5, 0.2]
+    # 各層の宣言
+    # 3つ目はバイアス
+    input_layer = [0.0, 0.0, 1.0]
+    middle_layer = [Neuron(), Neuron(), 1.0]
+    output_layer = Neuron()
+
+    # 実行
     def commit(self, input_data):
         self.neuron.reset()
         bias = 1.0
